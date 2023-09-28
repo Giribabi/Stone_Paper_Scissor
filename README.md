@@ -2,7 +2,7 @@
 My First Front end project to test my HTML, CSS (more precisely SCSS) , its animations and Javascript.
 
 Let us have a look at my corresponding SASS code:
-
+######
 @mixin card-padding{
     padding: 50px 25px;
     position: relative;
@@ -146,3 +146,4 @@ h1{
         }
     }
 }
+######
