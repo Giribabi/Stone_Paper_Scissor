@@ -58,7 +58,7 @@ h1{
     }
     #player1{
         grid-area: p1;
-        background-color: yellow;
+        background-color: rgb(61, 251, 61);
         @include card-padding();
         display: flex;
         img{
@@ -78,6 +78,7 @@ h1{
                 border-color: aqua;
             }
         }
+        box-shadow: 10px 10px rgb(154, 242, 154);
     }
     #popup{
         grid-area:d;
@@ -89,7 +90,7 @@ h1{
     }
     #player2{
         grid-area: p2;
-        background-color: yellow;
+        background-color: rgb(61, 251, 61);
         @include card-padding();
         display: flex;
         img{
@@ -109,6 +110,7 @@ h1{
                 border-color: aqua;
             }
         }
+        box-shadow: 10px 10px rgb(154, 242, 154);
     }
     #score1{
         grid-area: score1;
@@ -119,6 +121,7 @@ h1{
             position: relative;
             bottom: 30px;
         }
+        box-shadow: 10px 10px rgb(115, 248, 248);
     }
     #result{
         grid-area: result;
@@ -139,5 +142,6 @@ h1{
             position: relative;
             bottom: 30px;
         }
+        box-shadow: 10px 10px rgb(115, 248, 248);
     }
 }
