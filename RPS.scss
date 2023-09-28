@@ -1,0 +1,143 @@
+@mixin card-padding{
+    padding: 50px 25px;
+    position: relative;
+    bottom: 90px;
+    border-radius: 12px;
+}
+@keyframes trophee-right{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(40px);
+    }
+}
+@keyframes trophee-left{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-40px);
+    }
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0.01);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+*{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+h1{
+    color: white;
+    font-size:xx-large;
+    font-weight: 900;
+    text-align: center;
+}
+#container{
+    display: grid;
+    grid-template-areas: 'h h h h h' 
+                         'p1 p1 d p2 p2'
+                         'p1 p1 d p2 p2' 
+                         'score1 score1 result score2 score2';
+    background-color: white;
+    padding: 150px;
+    grid-gap: 15px;
+    
+    #header{
+        grid-area: h;
+        @include card-padding();
+        border: 10px double cyan;
+        padding: 1%;
+        h1{
+            color:rgb(236, 33, 151);
+        }
+    }
+    #player1{
+        grid-area: p1;
+        background-color: yellow;
+        @include card-padding();
+        display: flex;
+        img{
+            width:50%;
+            height: 50%;
+            margin: 10px;
+            border: 8px dotted hsl(300, 50%, 45%);
+            padding: 1%;
+            border-radius: 10px;
+            transform: scale(1);
+            transition: transform 600ms;
+            &:hover{
+                transform: scale(1.1);
+                transition: transform 600ms;
+            }
+            &:active{
+                border-color: aqua;
+            }
+        }
+    }
+    #popup{
+        grid-area:d;
+        @include card-padding();
+        h1{
+            color: black;
+            padding: 15px;
+        }
+    }
+    #player2{
+        grid-area: p2;
+        background-color: yellow;
+        @include card-padding();
+        display: flex;
+        img{
+            width:50%;
+            height: 50%;
+            margin: 10px;
+            border: 8px dotted hsl(300, 50%, 45%);
+            padding: 1%;
+            border-radius: 10px;
+            transform: scale(1);
+            transition: transform 600ms;
+            &:hover{
+                transform: scale(1.1);
+                transition: transform 600ms;
+            }
+            &:active{
+                border-color: aqua;
+            }
+        }
+    }
+    #score1{
+        grid-area: score1;
+        background-color: rgb(12, 190, 190);
+        @include card-padding();
+        height: 2%;
+        h1{
+            position: relative;
+            bottom: 30px;
+        }
+    }
+    #result{
+        grid-area: result;
+        @include card-padding();
+        height: 2%;
+        img{
+            position: relative;
+            bottom: 100px;
+            left: 10%;
+        }
+    }
+    #score2{
+        grid-area: score2;
+        background-color: rgb(12, 190, 190);
+        @include card-padding();
+        height: 2%;
+        h1{
+            position: relative;
+            bottom: 30px;
+        }
+    }
+}
