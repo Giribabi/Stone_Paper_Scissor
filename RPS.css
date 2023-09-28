@@ -1,0 +1,156 @@
+@keyframes trophee-right {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+@keyframes trophee-left {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-40px);
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0.01);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+* {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h1 {
+  color: white;
+  font-size: xx-large;
+  font-weight: 900;
+  text-align: center;
+}
+
+#container {
+  display: grid;
+  grid-template-areas: "h h h h h" "p1 p1 d p2 p2" "p1 p1 d p2 p2" "score1 score1 result score2 score2";
+  background-color: white;
+  padding: 150px;
+  grid-gap: 15px;
+}
+#container #header {
+  grid-area: h;
+  padding: 50px 25px;
+  position: relative;
+  bottom: 90px;
+  border-radius: 12px;
+  border: 10px double cyan;
+  padding: 1%;
+}
+#container #header h1 {
+  color: rgb(236, 33, 151);
+}
+#container #player1 {
+  grid-area: p1;
+  background-color: yellow;
+  padding: 50px 25px;
+  position: relative;
+  bottom: 90px;
+  border-radius: 12px;
+  display: flex;
+}
+#container #player1 img {
+  width: 50%;
+  height: 50%;
+  margin: 10px;
+  border: 8px dotted hsl(300, 50%, 45%);
+  padding: 1%;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: transform 600ms;
+}
+#container #player1 img:hover {
+  transform: scale(1.1);
+  transition: transform 600ms;
+}
+#container #player1 img:active {
+  border-color: aqua;
+}
+#container #popup {
+  grid-area: d;
+  padding: 50px 25px;
+  position: relative;
+  bottom: 90px;
+  border-radius: 12px;
+}
+#container #popup h1 {
+  color: black;
+  padding: 15px;
+}
+#container #player2 {
+  grid-area: p2;
+  background-color: yellow;
+  padding: 50px 25px;
+  position: relative;
+  bottom: 90px;
+  border-radius: 12px;
+  display: flex;
+}
+#container #player2 img {
+  width: 50%;
+  height: 50%;
+  margin: 10px;
+  border: 8px dotted hsl(300, 50%, 45%);
+  padding: 1%;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: transform 600ms;
+}
+#container #player2 img:hover {
+  transform: scale(1.1);
+  transition: transform 600ms;
+}
+#container #player2 img:active {
+  border-color: aqua;
+}
+#container #score1 {
+  grid-area: score1;
+  background-color: rgb(12, 190, 190);
+  padding: 50px 25px;
+  position: relative;
+  bottom: 90px;
+  border-radius: 12px;
+  height: 2%;
+}
+#container #score1 h1 {
+  position: relative;
+  bottom: 30px;
+}
+#container #result {
+  grid-area: result;
+  padding: 50px 25px;
+  position: relative;
+  bottom: 90px;
+  border-radius: 12px;
+  height: 2%;
+}
+#container #result img {
+  position: relative;
+  bottom: 100px;
+  left: 10%;
+}
+#container #score2 {
+  grid-area: score2;
+  background-color: rgb(12, 190, 190);
+  padding: 50px 25px;
+  position: relative;
+  bottom: 90px;
+  border-radius: 12px;
+  height: 2%;
+}
+#container #score2 h1 {
+  position: relative;
+  bottom: 30px;
+}/*# sourceMappingURL=RPS.css.map */
