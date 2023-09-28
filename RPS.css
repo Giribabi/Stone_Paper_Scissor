@@ -54,12 +54,13 @@ h1 {
 }
 #container #player1 {
   grid-area: p1;
-  background-color: yellow;
+  background-color: rgb(61, 251, 61);
   padding: 50px 25px;
   position: relative;
   bottom: 90px;
   border-radius: 12px;
   display: flex;
+  box-shadow: 10px 10px rgb(154, 242, 154);
 }
 #container #player1 img {
   width: 50%;
@@ -91,12 +92,13 @@ h1 {
 }
 #container #player2 {
   grid-area: p2;
-  background-color: yellow;
+  background-color: rgb(61, 251, 61);
   padding: 50px 25px;
   position: relative;
   bottom: 90px;
   border-radius: 12px;
   display: flex;
+  box-shadow: 10px 10px rgb(154, 242, 154);
 }
 #container #player2 img {
   width: 50%;
@@ -123,6 +125,7 @@ h1 {
   bottom: 90px;
   border-radius: 12px;
   height: 2%;
+  box-shadow: 10px 10px rgb(115, 248, 248);
 }
 #container #score1 h1 {
   position: relative;
@@ -149,6 +152,7 @@ h1 {
   bottom: 90px;
   border-radius: 12px;
   height: 2%;
+  box-shadow: 10px 10px rgb(115, 248, 248);
 }
 #container #score2 h1 {
   position: relative;
